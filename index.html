@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterdots game - KEV</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    
+    <!-- header-->
+    <header>
+        <img src="./img/asus.png" alt="spainflag" height="200px">
+    </header>
+    <!-- Login-->
+    <main>
+        <div>
+            <p id="error"></p>
+        </div>
+        <form action="game.html" id="gameFormular">
+            <div class="itemform">
+                <label for="nick">Nickname*</label>
+                <input type="text" name="nick" id="nick" required>
+            </div>
+            <div class="itemform">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@.com">
+            </div>
+            <div class="itemform">
+                <label for="size">Game size*</label>
+                <select name="size" id="size" required>
+                    <option value="0">Choose size</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+                <div class="itemform" id="playform">
+                    <input id="play" type="submit" value="PLAY!">
+                </div>
+                <div class="itemform">
+                    <p>* Mandatory</p>
+                </div>
+            </div>
+        </form>
+    </main>
+    <!-- Footer-->
+    <footer>
+        <p>Frontend Tests Javascript</p>
+    </footer>
+    <!-- SCRIPTS-->
+    <script src="./js/userData.js" defer></script>
+    <script src="./js/app.js" defer></script>
 </body>
 </html>
